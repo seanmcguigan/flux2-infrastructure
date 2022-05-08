@@ -4,7 +4,7 @@ metadata:
   name: sources
   namespace: flux-system
 spec:
-  interval: 2m
+  interval: 10m # detect drift and undo kubectl edits every 10 mins
   sourceRef:
     kind: GitRepository
     name: flux-system

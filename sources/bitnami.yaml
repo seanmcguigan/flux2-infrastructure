@@ -4,5 +4,5 @@ metadata:
   name: bitnami
   namespace: flux-system
 spec:
-  interval: 1m
+  interval: 10m # The interval defines at which interval the Helm repository contents are fetched
   url: https://charts.bitnami.com/bitnami
