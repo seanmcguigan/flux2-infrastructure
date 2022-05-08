@@ -4,4 +4,4 @@ namespace: formidable
 resources:
   - poker.yaml
   - poker-imagepolicy.yaml
-  - pokerimagerepository.yaml
+  - poker-imagerepository.yaml
