@@ -3,4 +3,5 @@ kind: Kustomization
 namespace: formidable
 resources:
   - poker.yaml
-  - poker-dockerhub.yaml
+  - poker-imagepolicy.yaml
+  - pokerimagerepository.yaml
