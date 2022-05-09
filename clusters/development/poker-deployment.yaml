@@ -13,10 +13,10 @@ spec:
         app: poker
     spec:
       containers:
-        - name: poker
-          image: docker.io/seanmcguigan/poker:1.0.3 # {"$imagepolicy": "flux-system:podinfo"}
-          imagePullPolicy: IfNotPresent
-          ports:
-            - name: http
-              containerPort: 3000
-              protocol: TCP
+      - name: poker
+        image: ghcr.io/stefanprodan/podinfo:5.0.3 # {"$imagepolicy": "flux-system:podinfo"}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: http
+          containerPort: 3000
+          protocol: TCP
