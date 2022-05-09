@@ -1,8 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: formidable
 resources:
-  - poker.yaml
+  - poker-deployment.yaml
+  - poker-imageupdateautomation.yaml
   - poker-imagepolicy.yaml
   - poker-imagerepository.yaml
-  - poker-image-automation.yaml
