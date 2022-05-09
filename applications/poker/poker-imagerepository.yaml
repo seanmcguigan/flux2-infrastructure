@@ -1,8 +1,0 @@
-apiVersion: image.toolkit.fluxcd.io/v1beta1
-kind: ImageRepository
-metadata:
-  name: poker
-  namespace: flux-system
-spec:
-  image: docker.io/seanmcguigan/poker
-  interval: 1m0s
