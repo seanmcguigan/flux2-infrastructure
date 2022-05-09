@@ -10,6 +10,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./applications
+  path: ./applications/development
   prune: true # remove stale resources from cluster
   #targetNamespace: formidable # set the namespace for all resources
