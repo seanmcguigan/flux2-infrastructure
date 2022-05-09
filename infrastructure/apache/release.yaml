@@ -24,3 +24,4 @@ spec:
     image:
       tag: 5.0.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
       registry: ghcr.io/stefanprodan/podinfo  # {"$imagepolicy": "flux-system:podinfo:name"}
+      repository: ""
