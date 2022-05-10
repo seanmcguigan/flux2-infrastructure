@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- applications.yaml
+- flux-system
+- infrastructure.yaml
+- podinfo-deployment.yaml
+- podinfo-imagepolicy.yaml
+- podinfo-imagerepo.yaml
+- podinfo-imageupdateautomation.yaml
+- poker-deployment.yaml
+- poker-imageautomation.yaml
+- poker-imagepolicy.yaml
+- poker-imagerepository.yaml
+- sources.yaml

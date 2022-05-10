@@ -1,3 +1,4 @@
+# A Flux Kustomization describes a path inside of a Source that Flux should apply to the cluster
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
@@ -10,6 +11,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./applications
+  path: ./applications/development
   prune: true # remove stale resources from cluster
   #targetNamespace: formidable # set the namespace for all resources

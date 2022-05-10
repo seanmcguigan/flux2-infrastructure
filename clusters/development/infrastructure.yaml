@@ -1,3 +1,4 @@
+# A Flux Kustomization describes a path inside of a Source that Flux should apply to the cluster
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
