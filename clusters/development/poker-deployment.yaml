@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: poker
-        image: docker.io/seanmcguigan/poker:1.0.6 # {"$imagepolicy": "flux-system:poker"}
+        image: docker.io/seanmcguigan/poker:1.0.7 # {"$imagepolicy": "flux-system:poker"}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
