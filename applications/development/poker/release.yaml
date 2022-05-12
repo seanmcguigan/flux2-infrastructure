@@ -11,12 +11,12 @@ spec:
         kind: HelmRepository
         name: seanmcguigan-helmrepo
         namespace: flux-system
-      version: "0.1.3"
+      version: "0.1.4"
   interval: 1m
   install:
     remediation:
       retries: 3
   values:
-    images:  docker.io/seanmcguigan/poker:1.0.7 # {"$imagepolicy": "flux-system:poker"}
+    image:  docker.io/seanmcguigan/poker:1.0.7 # {"$imagepolicy": "flux-system:poker"}
     service:
       type: ClusterIP
