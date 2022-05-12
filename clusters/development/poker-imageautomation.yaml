@@ -20,6 +20,6 @@ spec:
     push:
       branch: main
   update:
-    path: ./clusters/development
+    path: ./applications/development/poker
     # Path to the directory containing the manifests to be updated. Defaults to ‘None’, which translates to the root path of the GitRepositoryRef
     strategy: Setters
