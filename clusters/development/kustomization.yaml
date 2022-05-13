@@ -8,7 +8,6 @@ resources:
 - podinfo-imagepolicy.yaml
 - podinfo-imagerepo.yaml
 - podinfo-imageupdateautomation.yaml
-- poker-deployment.yaml
 - poker-imageautomation.yaml
 - poker-imagepolicy.yaml
 - poker-imagerepository.yaml
