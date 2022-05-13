@@ -1,1 +1,3 @@
-# flux reconcile kustomization flux-system --with-source
+```
+flux reconcile kustomization flux-system --with-source
+```
