@@ -3,5 +3,4 @@ kind: Kustomization
 resources:
   - nginx
   - apache
-  - namespace.yaml
   - integrations
