@@ -15,4 +15,3 @@ spec:
   exclusionList:
     - "failed[[:space:]]to[[:space:]]verify[[:space:]]artifact"
     - "unable[[:space:]]to[[:space:]]clone"
-      
