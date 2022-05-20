@@ -6,7 +6,7 @@ spec:
   imageRepositoryRef:
     name: poker
   filterTags:
-    pattern: '^development-[a-fA-F0-9]+-(?P<ts>[1-9][0-9]*)'
+    pattern: '^development-[a-fA-F0-9]+-(?P<ts>.*)'
     extract: '$ts'
   policy:
      numerical:
