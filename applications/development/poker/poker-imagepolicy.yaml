@@ -8,7 +8,6 @@ spec:
     name: poker
   filterTags:
     pattern: '^development-[a-fA-F0-9]+-*'
-    extract: '$ts'
   policy:
      numerical:
       order: asc
