@@ -1,5 +1,4 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
-kind: ImagePolicy
 metadata:
   name: poker
   namespace: flux-system
@@ -7,22 +6,8 @@ spec:
   imageRepositoryRef:
     name: poker
   filterTags:
-    pattern: '^development-[a-fA-F0-9]+-*'
+    pattern: '^development-[a-fA-F0-9]+-(?P<ts>[1-9][0-9]*)'
+    extract: '$ts'
   policy:
      numerical:
       order: asc
-
-# apiVersion: image.toolkit.fluxcd.io/v1beta1
-# kind: ImagePolicy
-# metadata:
-#   name: poker
-#   namespace: flux-system
-# spec:
-#   imageRepositoryRef:
-#     name: poker
-#   filterTags:
-#     pattern: '^development-[a-fA-F0-9]+-\d{4}-\d{2}-\d{2}T\d{6}Z'
-#     extract: '$ts'
-#   policy:
-#      numerical:
-#       order: asc
