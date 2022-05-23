@@ -5,4 +5,4 @@ metadata:
 spec:
   values:
     image: docker.io/seanmcguigan/poker:development-9676f107-20222005093806 # {"$imagepolicy": "flux-system:poker"}
-    replicaCount: 3
+    replicaCount: 1
