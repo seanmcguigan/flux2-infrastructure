@@ -4,3 +4,4 @@ namespace: istio-system
 resources:
   - istio-base-release.yaml
   - istiod-release.yaml
+  - kiali.yaml
