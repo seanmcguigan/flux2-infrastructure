@@ -16,6 +16,7 @@ spec:
   install:
     remediation:
       retries: 3
-  service:
-    # Type of service. Set to "None" to disable the service entirely
-    type: Nodeport
+  values:
+    service:
+      # Type of service. Set to "None" to disable the service entirely
+      type: Nodeport
