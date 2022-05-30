@@ -19,4 +19,4 @@ spec:
   values:
     service:
       # Type of service. Set to "None" to disable the service entirely
-      type: Nodeport
+      type: NodePort
