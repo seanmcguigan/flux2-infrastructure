@@ -1,0 +1,16 @@
+# A Flux Kustomization describes a path inside of a Source that Flux should apply to the cluster
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: infrastructure
+  namespace: flux-system
+spec:
+  interval: 5m  # detect drift and undo kubectl edits every 10 mins
+  wait: true # wait for all applied resources to become ready
+  timeout: 3m0s # give up waiting after three minutes
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  path: ./namespaces
+  prune: true # remove stale resources from cluster
+  #targetNamespace: formidable # set the namespace for all resources

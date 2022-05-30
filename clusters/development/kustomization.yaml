@@ -9,3 +9,4 @@ resources:
 - podinfo-imagerepo.yaml
 - podinfo-imageupdateautomation.yaml
 - sources.yaml
+- namespaces.yaml
