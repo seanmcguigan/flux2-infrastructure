@@ -5,4 +5,4 @@ resources:
   - apache
   - integrations
   - istio
-  - istio-ingress
+  
