@@ -3,6 +3,9 @@ kind: HelmRelease
 metadata:
   name: istio-ingress
 spec:
+  dependsOn:
+    - name: istio-base
+    - name: istiod
   releaseName: istio-ingress
   chart:
     spec:

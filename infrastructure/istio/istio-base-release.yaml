@@ -4,6 +4,8 @@ metadata:
   name: istio-base
 spec:
   releaseName: istio-base
+  install:
+    crds: Create
   chart:
     spec:
       chart: base
