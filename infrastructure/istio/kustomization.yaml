@@ -5,4 +5,4 @@ resources:
   - istio-base-release.yaml
   - istiod-release.yaml
   - kiali.yaml
-  = istio-ingress-release.yaml
+  - istio-ingress-release.yaml
