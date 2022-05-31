@@ -4,8 +4,6 @@ metadata:
   name: istio-base
 spec:
   releaseName: istio-base
-  install:
-    crds: Create
   chart:
     spec:
       chart: base
@@ -16,5 +14,6 @@ spec:
       version: "1.13.4"
   interval: 1m
   install:
+    crds: Create
     remediation:
       retries: 3
