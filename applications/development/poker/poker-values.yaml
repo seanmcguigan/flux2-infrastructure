@@ -2,6 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: poker
+  namespace: formidable
 spec:
   values:
     image: docker.io/seanmcguigan/poker:development-802281c2-20220530091004 # {"$imagepolicy": "flux-system:poker"}
