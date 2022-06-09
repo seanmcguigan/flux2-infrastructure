@@ -4,6 +4,5 @@ resources:
   - ../../base/poker
   - poker-imageautomation.yaml
   - poker-imagepolicy.yaml
-  - poker-imagerepository.yaml
 patchesStrategicMerge:
   - poker-values.yaml

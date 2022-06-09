@@ -17,6 +17,7 @@ spec:
     remediation:
       retries: 3
   values:
-    image: docker.io/seanmcguigan/poker:1.0.8 # {"$imagepolicy": "flux-system:poker"}
+    image: docker.io/seanmcguigan/poker:1.0.8
+    replicaCount: 3
     service:
       type: ClusterIP

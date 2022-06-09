@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: formidable
 resources:
   - poker-release.yaml
+  - poker-imagerepository.yaml
