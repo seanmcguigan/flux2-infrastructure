@@ -5,5 +5,5 @@ metadata:
   namespace: formidable
 spec:
   values:
-    image: docker.io/seanmcguigan/poker:development-802281c2-20220530091004 # {"$imagepolicy": "flux-system:poker"}
+    image: docker.io/seanmcguigan/poker:development-fc7cdcb3-20220609150238 # {"$imagepolicy": "flux-system:poker"}
     replicaCount: 1
