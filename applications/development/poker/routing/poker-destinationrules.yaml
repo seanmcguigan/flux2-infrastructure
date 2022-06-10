@@ -2,6 +2,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
   name: poker
+  namespace: formidable
 spec:
   host: 'poker.formidable.svc.cluster.local'
   subsets:
