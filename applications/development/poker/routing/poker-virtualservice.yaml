@@ -13,6 +13,8 @@ spec:
     - match:
       - uri:
           prefix: /v1
+      rewrite:
+        uri: "/"
       route:
       - destination:
           host: poker.formidable.svc.cluster.local
@@ -20,6 +22,8 @@ spec:
     - match:
       - uri:
           prefix: /v2
+      rewrite:
+        uri: "/"
       route:
       - destination:
           host: poker.formidable.svc.cluster.local
