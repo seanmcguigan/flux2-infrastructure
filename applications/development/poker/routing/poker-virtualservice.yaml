@@ -10,17 +10,17 @@ spec:
     - 'pokerstars.com' # external
     - 'poker.formidable.svc.cluster.local' # internal - from other services
   http:
-    - route:
+    - match:
+    - uri:
+        prefix: /v1
+      route:
       - destination:
           host: poker.formidable.svc.cluster.local
           subset: v1
-          port:
-            number: 3000
-        weight: 75
-    - route:
+    - match:
+    - uri:
+        prefix: /v2
+      route:
       - destination:
           host: poker.formidable.svc.cluster.local
           subset: v2
-          port:
-            number: 3000
-        weight: 25
