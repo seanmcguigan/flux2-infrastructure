@@ -16,10 +16,10 @@ spec:
           subset: v1
           port:
             number: 3000
-          weight: 75
+        weight: 75
       - destination:
           host: poker.formidable.svc.cluster.local
           subset: v2
           port:
             number: 3000
-          weight: 25
+        weight: 25
