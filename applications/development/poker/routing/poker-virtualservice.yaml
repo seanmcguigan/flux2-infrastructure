@@ -11,15 +11,15 @@ spec:
     - 'poker.formidable.svc.cluster.local' # internal - from other services
   http:
     - match:
-    - uri:
-        prefix: /v1
+      - uri:
+          prefix: /v1
       route:
       - destination:
           host: poker.formidable.svc.cluster.local
           subset: v1
     - match:
-    - uri:
-        prefix: /v2
+      - uri:
+          prefix: /v2
       route:
       - destination:
           host: poker.formidable.svc.cluster.local
