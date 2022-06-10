@@ -8,5 +8,4 @@ spec:
     image: docker.io/seanmcguigan/poker:development-fc7cdcb3-20220609150238 # {"$imagepolicy": "flux-system:poker"}
     replicaCount: 1
     podLabels:
-      app: poker
       version: v1
