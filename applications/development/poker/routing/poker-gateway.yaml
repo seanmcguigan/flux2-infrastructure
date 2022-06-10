@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: poker-gateway
+  namespace: formidable
+spec:
+  selector:
+    istio: ingress
+  servers:
+  - hosts: # the user-addressable destination or destinations that these routing rules apply to.
+    - 'pokerstars.com' # external
+    - 'poker.formidable.svc.cluster.local' # internal - from other services
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
+

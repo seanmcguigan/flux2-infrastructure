@@ -1,0 +1,14 @@
+# apiVersion: image.toolkit.fluxcd.io/v1beta1
+# kind: ImagePolicy
+# metadata:
+#   name: poker-v2
+#   namespace: flux-system
+# spec:
+#   imageRepositoryRef:
+#     name: poker
+#   filterTags:
+#     pattern: '^development-v2-[a-fA-F0-9]+-(?P<ts>.*)'
+#     extract: '$ts'
+#   policy:
+#      numerical:
+#       order: asc

@@ -1,0 +1,20 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: poker-v2
+#   namespace: formidable
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: poker
+#       version: v2
+#   template:
+#     metadata:
+#       labels:
+#         app: poker
+#         version: v2
+#     spec:
+#       containers:
+#       - image: docker.io/seanmcguigan/poker:development-fc7cdcb3-20220609150238 # {"$imagepolicy": "flux-system:poker-v2"}
+#         name: poker-v2

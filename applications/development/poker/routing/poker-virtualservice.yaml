@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: poker
+  namespace: formidable
+spec:
+  gateways:
+    - poker-gateway
+  hosts:
+    - 'pokerstars.com' # external
+    - 'poker.formidable.svc.cluster.local' # internal - from other services
+  http:
+    - route:
+      - destination:
+          host: poker.formidable.svc.cluster.local
+          port:
+            number: 5000
