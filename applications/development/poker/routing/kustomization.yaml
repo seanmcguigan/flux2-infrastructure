@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - poker-virtualservice.yaml
   - poker-gateway.yaml
+  - poker-destinationrules.yaml

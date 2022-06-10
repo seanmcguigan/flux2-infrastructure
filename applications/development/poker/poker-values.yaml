@@ -9,3 +9,4 @@ spec:
     replicaCount: 1
     podLabels:
       app: poker
+      version: v1

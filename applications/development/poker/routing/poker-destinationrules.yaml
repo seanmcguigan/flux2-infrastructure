@@ -1,1 +1,13 @@
-# rules
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: poker
+spec:
+  host: 'poker.formidable.svc.cluster.local'
+  subsets:
+  - labels:
+      version: v1
+    name: v1
+  - labels:
+      version: v2
+    name: v2
