@@ -17,6 +17,7 @@ spec:
           port:
             number: 3000
         weight: 75
+    - route:
       - destination:
           host: poker.formidable.svc.cluster.local
           subset: v2
