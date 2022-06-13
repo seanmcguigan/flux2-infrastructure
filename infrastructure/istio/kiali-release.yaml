@@ -1,28 +1,26 @@
-# apiVersion: helm.toolkit.fluxcd.io/v2beta1
-# kind: HelmRelease
-# metadata:
-#   name: kiali
-#   namespace: kiali-operator
-# spec:
-#   releaseName: kiali
-#   chart:
-#     spec:
-#       chart: kaiki
-#       sourceRef:
-#         kind: HelmRepository
-#         name: kiali/kiali-operator
-#         namespace: flux-system
-#       version: "1.51.1"
-#   interval: 1m
-#   install:
-#     remediation:
-#       retries: 3
-#   values:
-#     cr.create: true
-#     cr.namespace: istio-system
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: kiali
+  namespace: kiali-operator
+spec:
+  releaseName: kiali
+  chart:
+    spec:
+      chart: kaiki
+      sourceRef:
+        kind: HelmRepository
+        name: kiali/kiali-operator
+        namespace: flux-system
+      version: "1.51.1"
+  interval: 1m
+  install:
+    remediation:
+      retries: 3
+  values:
+    cr.create: true
+    cr.namespace: istio-system
 
-#     service:
-#       type: ClusterIP
 # ---
 # # Source: kiali-server/templates/serviceaccount.yaml
 # apiVersion: v1
