@@ -14,7 +14,7 @@ spec:
         namespace: flux-system
       version: "1.51.1"
   interval: 1m
-  timeout: 900
+  timeout: '900'
   install:
     remediation:
       retries: 3
