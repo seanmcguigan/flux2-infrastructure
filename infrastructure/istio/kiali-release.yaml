@@ -7,7 +7,7 @@ spec:
   releaseName: kiali
   chart:
     spec:
-      chart: kaiki
+      chart: kiali
       sourceRef:
         kind: HelmRepository
         name: kiali/kiali-operator
