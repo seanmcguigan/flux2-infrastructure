@@ -13,8 +13,8 @@ spec:
         name: kiali/kiali-operator
         namespace: flux-system
       version: "1.51.1"
-      timeout: 900
   interval: 1m
+  timeout: 900
   install:
     remediation:
       retries: 3
