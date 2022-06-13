@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: kiali/kiali-operator
         namespace: flux-system
-      version: "1.51.1"
+      version: "1.36.2"
   interval: 1m
   install:
     remediation:
