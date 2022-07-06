@@ -14,8 +14,8 @@ spec:
     - destination:
         host: poker.formidable.svc.cluster.local
         subset: v1
-      weight: 80
+      weight: 90
     - destination:
         host: poker.formidable.svc.cluster.local
         subset: v2
-      weight: 20
+      weight: 10

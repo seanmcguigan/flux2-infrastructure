@@ -1,0 +1,11 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: poker-canary-releases
+  namespace: formidable
+spec:
+  values:
+    image: docker.io/seanmcguigan/poker:development-202a65c3-20220617111356 # {"$imagepolicy": "flux-system:poker"}
+    replicaCount: 1
+    customPodLabels:
+      version: v2

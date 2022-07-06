@@ -7,5 +7,5 @@ spec:
   values:
     image: docker.io/seanmcguigan/poker:development-202a65c3-20220617111356 # {"$imagepolicy": "flux-system:poker"}
     replicaCount: 1
-    podLabels:
+    customPodLabels:
       version: v1
