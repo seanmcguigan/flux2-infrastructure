@@ -4,7 +4,7 @@ metadata:
   name: poker-canary-release
   namespace: formidable
 spec:
-  releaseName: poker
+  releaseName: poker-canary
   chart:
     spec:
       chart: poker
