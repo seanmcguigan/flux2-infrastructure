@@ -7,6 +7,5 @@ resources:
   - routing
 patchesStrategicMerge:
   - poker-helm-release.yaml
-patchesStrategicMerge:
   - poker-helm-release-canary.yaml
 
