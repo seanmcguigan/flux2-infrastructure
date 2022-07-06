@@ -1,0 +1,25 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: poker-canary-release
+  namespace: formidable
+spec:
+  releaseName: poker
+  chart:
+    spec:
+      chart: poker
+      sourceRef:
+        kind: HelmRepository
+        name: seanmcguigan-helmrepo
+        namespace: flux-system
+      version: "0.1.7"
+  interval: 1m
+  install:
+    remediation:
+      retries: 3
+  values:
+    image: docker.io/seanmcguigan/poker:1.0.7
+    replicaCount: 3
+    service:
+      type: ClusterIP
+
