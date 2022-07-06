@@ -6,4 +6,6 @@ resources:
   - poker-imagepolicy.yaml
   - routing
 patchesStrategicMerge:
-  - poker-values.yaml
+  - poker-helm-release.yaml
+  - poker-helm-release-canary.yaml
+

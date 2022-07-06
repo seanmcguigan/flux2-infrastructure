@@ -22,5 +22,4 @@ spec:
     replicaCount: 3
     service:
       type: ClusterIP
-    podLabels:
-      app: poker
+
