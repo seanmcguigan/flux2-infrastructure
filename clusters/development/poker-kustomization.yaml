@@ -6,6 +6,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 3m  # detect drift and undo kubectl edits every 10 mins
+  dependsOn:
+  - name: infrastructure
   wait: true # wait for all applied resources to become ready
   timeout: 3m0s # give up waiting after three minutes
   sourceRef:
@@ -13,4 +15,4 @@ spec:
     name: flux-system
   path: ./applications/development/poker
   prune: true # remove stale resources from cluster
-  #targetNamespace: formidable # set the namespace for all resources
+  #targetNamespace: formidable # set the namespace for all resources                                        
