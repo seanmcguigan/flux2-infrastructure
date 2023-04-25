@@ -1,17 +1,17 @@
-apiVersion: notification.toolkit.fluxcd.io/v1beta1
-kind: Alert
-metadata:
-  name: on-call-webapp
-  namespace: flux-system
-spec:
-  providerRef:
-    name: slack
-  eventSeverity: info
-  eventSources:
-    - kind: GitRepository
-      name: '*'
-    - kind: Kustomization
-      name: '*'
-  exclusionList:
-    - "failed[[:space:]]to[[:space:]]verify[[:space:]]artifact"
-    - "unable[[:space:]]to[[:space:]]clone"
+# apiVersion: notification.toolkit.fluxcd.io/v1beta1
+# kind: Alert
+# metadata:
+#   name: on-call-webapp
+#   namespace: flux-system
+# spec:
+#   providerRef:
+#     name: slack
+#   eventSeverity: info
+#   eventSources:
+#     - kind: GitRepository
+#       name: '*'
+#     - kind: Kustomization
+#       name: '*'
+#   exclusionList:
+#     - "failed[[:space:]]to[[:space:]]verify[[:space:]]artifact"
+#     - "unable[[:space:]]to[[:space:]]clone"
