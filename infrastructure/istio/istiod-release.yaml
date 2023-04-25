@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: istio
         namespace: flux-system
-      version: "1.13.4"
+      version: "1.17.2"
   interval: 1m
   install:
     remediation:
