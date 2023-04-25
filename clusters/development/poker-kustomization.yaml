@@ -6,10 +6,10 @@ metadata:
   namespace: flux-system
 spec:
   interval: 3m  # detect drift and undo kubectl edits every 10 mins
-  dependsOn:
-  - name: infrastructure
-  wait: true # wait for all applied resources to become ready
-  timeout: 3m0s # give up waiting after three minutes
+  # dependsOn:
+  # - name: infrastructure
+  # wait: true # wait for all applied resources to become ready
+  # timeout: 3m0s # give up waiting after three minutes
   sourceRef:
     kind: GitRepository
     name: flux-system
